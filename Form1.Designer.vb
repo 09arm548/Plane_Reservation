@@ -28,7 +28,7 @@ Partial Class Form1
         '
         'btnMap
         '
-        Me.btnMap.Location = New System.Drawing.Point(39, 192)
+        Me.btnMap.Location = New System.Drawing.Point(210, 258)
         Me.btnMap.Name = "btnMap"
         Me.btnMap.Size = New System.Drawing.Size(75, 23)
         Me.btnMap.TabIndex = 0
@@ -37,18 +37,19 @@ Partial Class Form1
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Courier New", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(39, 22)
+        Me.ListBox1.Location = New System.Drawing.Point(33, 24)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(206, 148)
+        Me.ListBox1.Size = New System.Drawing.Size(397, 212)
         Me.ListBox1.TabIndex = 1
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(282, 255)
+        Me.ClientSize = New System.Drawing.Size(465, 309)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.btnMap)
         Me.Name = "Form1"
