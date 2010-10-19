@@ -23,41 +23,65 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnMap = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstMap = New System.Windows.Forms.ListBox()
+        Me.txtSeatNum = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnMap
         '
-        Me.btnMap.Location = New System.Drawing.Point(33, 262)
+        Me.btnMap.Location = New System.Drawing.Point(470, 313)
+        Me.btnMap.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnMap.Name = "btnMap"
-        Me.btnMap.Size = New System.Drawing.Size(75, 23)
+        Me.btnMap.Size = New System.Drawing.Size(56, 19)
         Me.btnMap.TabIndex = 0
-        Me.btnMap.Text = "Button1"
+        Me.btnMap.Text = "Show Map"
         Me.btnMap.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'lstMap
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Courier New", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(33, 24)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(397, 212)
-        Me.ListBox1.TabIndex = 1
+        Me.lstMap.Font = New System.Drawing.Font("Courier New", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstMap.FormattingEnabled = True
+        Me.lstMap.ItemHeight = 12
+        Me.lstMap.Location = New System.Drawing.Point(25, 20)
+        Me.lstMap.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstMap.Name = "lstMap"
+        Me.lstMap.Size = New System.Drawing.Size(299, 172)
+        Me.lstMap.TabIndex = 1
+        '
+        'txtSeatNum
+        '
+        Me.txtSeatNum.Location = New System.Drawing.Point(224, 216)
+        Me.txtSeatNum.Name = "txtSeatNum"
+        Me.txtSeatNum.Size = New System.Drawing.Size(100, 20)
+        Me.txtSeatNum.TabIndex = 2
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(223, 289)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(100, 20)
+        Me.txtName.TabIndex = 3
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(465, 309)
-        Me.Controls.Add(Me.ListBox1)
+        Me.ClientSize = New System.Drawing.Size(609, 387)
+        Me.Controls.Add(Me.txtName)
+        Me.Controls.Add(Me.txtSeatNum)
+        Me.Controls.Add(Me.lstMap)
         Me.Controls.Add(Me.btnMap)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMain"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnMap As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents lstMap As System.Windows.Forms.ListBox
+    Friend WithEvents txtSeatNum As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
 
 End Class
