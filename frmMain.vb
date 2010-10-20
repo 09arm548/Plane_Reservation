@@ -1,6 +1,7 @@
 ﻿Public Class frmMain
     Dim strSeat(9, 3) As String
     Dim intFull As Integer
+    Dim strStandby(5) As String
 
     Private Sub btnMap_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMap.Click
 
@@ -194,10 +195,11 @@
     End Sub
 
     Private Sub btnBookSeat_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBookSeat.Click
-        If intFull = 39 Then
-            MessageBox.Show("full")
+        If intFull = 3 Then
+            strStandby(0) = txtName.Text
+            MessageBox.Show(strStandby(0))
         Else
-            MessageBox.Show(intFull)
+            MessageBox.Show("kk")
         End If
         'Dim intSum As Integer
         'Dim element As Integer
