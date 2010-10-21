@@ -197,9 +197,10 @@
     Private Sub btnBookSeat_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBookSeat.Click
         If intFull = 3 Then
             strStandby(0) = txtName.Text
+            MessageBox.Show("Plane is full, you will be placed on standby.")
             MessageBox.Show(strStandby(0))
         Else
-            MessageBox.Show("kk")
+            MessageBox.Show(intFull)
         End If
         'Dim intSum As Integer
         'Dim element As Integer
